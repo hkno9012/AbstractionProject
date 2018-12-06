@@ -20,13 +20,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogicalGate" translatesAutoresizingMaskIntoConstraints="NO" id="Py1-GV-Gj8">
                                 <rect key="frame" x="16" y="54" width="340" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="Aw5-ye-kRA"/>
+                                    <constraint firstAttribute="height" constant="200" id="CQg-FI-n39"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsf-rx-vVm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsf-rx-vVm">
                                 <rect key="frame" x="16" y="262" width="340" height="330"/>
-                                <string key="text">Logical gate code is more abstract than electrical wires, because there are groups for and paths to outcomes. It’s less abstract than binary code, because true and false are still explicitly stated.
-</string>
+                                <string key="text">Logical gate code is more abstract than electrical wires, because there are groups for and paths to outcomes. It’s less abstract than binary code, because true and false are still explicitly stated.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -34,12 +33,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.70045275276602947" blue="0.67294112384196558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pme-3f-C7v" firstAttribute="bottom" secondItem="rsf-rx-vVm" secondAttribute="bottom" constant="75" id="040-NE-r2h"/>
-                            <constraint firstItem="pme-3f-C7v" firstAttribute="trailing" secondItem="Py1-GV-Gj8" secondAttribute="trailing" constant="19" id="7iG-fu-FVN"/>
-                            <constraint firstItem="Py1-GV-Gj8" firstAttribute="leading" secondItem="ZmF-2O-v0G" secondAttribute="leadingMargin" id="8Ol-SC-sje"/>
-                            <constraint firstItem="Py1-GV-Gj8" firstAttribute="top" secondItem="pme-3f-C7v" secondAttribute="top" constant="34" id="XMe-a8-wsf"/>
-                            <constraint firstItem="rsf-rx-vVm" firstAttribute="top" secondItem="Py1-GV-Gj8" secondAttribute="bottom" constant="8" symbolic="YES" id="XwE-yF-vQb"/>
-                            <constraint firstItem="Py1-GV-Gj8" firstAttribute="leading" secondItem="rsf-rx-vVm" secondAttribute="leading" id="v4r-YH-7Id"/>
+                            <constraint firstItem="rsf-rx-vVm" firstAttribute="top" secondItem="Py1-GV-Gj8" secondAttribute="bottom" constant="8" symbolic="YES" id="8v7-El-Q1V"/>
+                            <constraint firstItem="Py1-GV-Gj8" firstAttribute="leading" secondItem="ZmF-2O-v0G" secondAttribute="leadingMargin" id="QM3-DV-rj4"/>
+                            <constraint firstItem="Py1-GV-Gj8" firstAttribute="leading" secondItem="rsf-rx-vVm" secondAttribute="leading" id="TwA-zS-8jW"/>
+                            <constraint firstItem="pme-3f-C7v" firstAttribute="trailing" secondItem="Py1-GV-Gj8" secondAttribute="trailing" constant="19" id="XSO-F5-miK"/>
+                            <constraint firstItem="rsf-rx-vVm" firstAttribute="trailing" secondItem="Py1-GV-Gj8" secondAttribute="trailing" id="b65-1A-RuT"/>
+                            <constraint firstItem="pme-3f-C7v" firstAttribute="bottom" secondItem="rsf-rx-vVm" secondAttribute="bottom" constant="75" id="oCO-D4-RF6"/>
+                            <constraint firstItem="Py1-GV-Gj8" firstAttribute="top" secondItem="pme-3f-C7v" secondAttribute="top" constant="34" id="raa-Uw-FrB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pme-3f-C7v"/>
                     </view>
@@ -58,8 +58,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWI-qX-BID">
                                 <rect key="frame" x="16" y="262" width="340" height="330"/>
-                                <string key="text">Binary code is more abstract than logical gate code, because it only takes one character to represent true or false. It’s less abstract than object code, because there aren’t any established methods or classes.
-</string>
+                                <string key="text">Binary code is more abstract than logical gate code, because it only takes one character to represent true or false. It’s less abstract than object code, because there aren’t any established methods or classes.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -106,8 +105,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEh-No-Q3H">
                                 <rect key="frame" x="16" y="262" width="340" height="330"/>
-                                <string key="text">Object code is more abstract than binary, because values and pieces of data can be restated without having to write them all out again. It’s less abstract than block code, because pieces of code actually do anything until they are supplied with commands; block code has pre-written commands.
-</string>
+                                <string key="text">Object code is more abstract than binary, because values and pieces of data can be restated without having to write them all out again. It’s less abstract than block code, because pieces of code actually do anything until they are supplied with commands; block code has pre-written commands.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -144,7 +142,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7y-Qd-4Po">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7y-Qd-4Po">
                                 <rect key="frame" x="16" y="262" width="340" height="330"/>
                                 <string key="text">Block code is more abstract than object code, beccause commands are pre-written for the coder. It’s less abstract than Swift, because it takes more explanation for each command.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -166,6 +164,7 @@
                             <constraint firstItem="xYA-wE-VlZ" firstAttribute="trailing" secondItem="djy-KJ-Z6b" secondAttribute="trailing" constant="19" id="OWr-GK-n1W"/>
                             <constraint firstItem="xYA-wE-VlZ" firstAttribute="bottom" secondItem="n7y-Qd-4Po" secondAttribute="bottom" constant="75" id="cBK-el-Eda"/>
                             <constraint firstItem="n7y-Qd-4Po" firstAttribute="top" secondItem="djy-KJ-Z6b" secondAttribute="bottom" constant="8" symbolic="YES" id="o7Q-do-4cq"/>
+                            <constraint firstItem="n7y-Qd-4Po" firstAttribute="trailing" secondItem="djy-KJ-Z6b" secondAttribute="trailing" id="q5i-Y8-cnS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xYA-wE-VlZ"/>
                     </view>
