@@ -11,6 +11,7 @@ import UIKit
 public class AbstractionViewController: UIPageViewController, UIPageViewControllerDataSource
 {
 
+    //MARK:- Lifecycle Methods
     public override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -44,6 +45,33 @@ public class AbstractionViewController: UIPageViewController, UIPageViewControll
         {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "\(abstractionLevel)ViewController")
         }
+    
+    //MARK:- Datasource Required Methods
+    //Swipe Left
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?
+    {
+        guard let viewControllerIndex = orderedAbstractionViews.index(of: viewController)
+            else
+        {
+            return nil
+        }
+        
+        let previousIndex = viewControllerIndex - 1
+        
+        guard previousIndex >= 0
+            else
+        {
+            return orderedAbstractionViews.last
+        }
+        
+        guard orderedAbstractionViews.count > previousIndex
+            else
+        {
+            return nil
+        }
+        
+        return orderedAbstractionViews[previousIndex]
+    }
 
     /*
     //MARK: - Navigation
