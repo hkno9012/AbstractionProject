@@ -8,20 +8,49 @@
 
 import UIKit
 
-class AbstractionViewController: UIPageViewController {
+public class AbstractionViewController: UIPageViewController, UIPageViewControllerDataSource
+{
 
-    override func viewDidLoad() {
+    public override func viewDidLoad()
+    {
         super.viewDidLoad()
+        dataSource = self
+        
+        if let firstViewController = orderedAbstractionViews.first
+        {
+            setViewControllers([firstViewController],
+                               direction: .forward,
+                               animated: true,
+                               completion: nil)
+        }
 
         // Do any additional setup after loading the view.
     }
     
+    //MARK:- Data Members
+    private lazy var orderedAbstractionViews : [UIViewController] =
+    {
+        return [
+            self.newAbstractionViewController(abstractionLevel: "LogicalGate"),
+            self.newAbstractionViewController(abstractionLevel: "Binary"),
+            self.newAbstractionViewController(abstractionLevel: "Object"),
+            self.newAbstractionViewController(abstractionLevel: "Block"),
+            self.newAbstractionViewController(abstractionLevel: "Swift")
+        ]
+    }()
+    
+    //MARK: Helper Method
+    private func newAbstractionViewController(abstractionLevel : String) -> UIViewController
+        {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "\(abstractionLevel)ViewController")
+        }
 
     /*
-    // MARK: - Navigation
+    //MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
