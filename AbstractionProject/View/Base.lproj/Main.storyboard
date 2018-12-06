@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Logical Gate Code-->
         <scene sceneID="0DQ-eW-mdc">
             <objects>
-                <viewController id="DEm-Yg-fMp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogicalGateViewController" title="Logical Gate Code" id="DEm-Yg-fMp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZmF-2O-v0G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="813.60000000000002" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Binary Code-->
         <scene sceneID="hZ4-7W-Wke">
             <objects>
-                <viewController id="4HT-M1-tHq" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BinaryViewController" title="Binary Code" id="4HT-M1-tHq" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ruu-kK-1ov">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="2121" y="-582"/>
         </scene>
-        <!--View Controller-->
+        <!--Object Code-->
         <scene sceneID="D2J-nE-RyZ">
             <objects>
-                <viewController id="se9-8F-RiD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ObjectViewController" title="Object Code" id="se9-8F-RiD" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YeU-xn-ovu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,10 +116,10 @@
             </objects>
             <point key="canvasLocation" x="2120.8000000000002" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Block Code-->
         <scene sceneID="jL0-c2-NBi">
             <objects>
-                <viewController id="q7v-aH-oe1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BlockViewController" title="Block Code" id="q7v-aH-oe1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jCG-yU-kkV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -149,10 +149,10 @@
             </objects>
             <point key="canvasLocation" x="2792.8000000000002" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Swift Code-->
         <scene sceneID="R7t-sl-hNH">
             <objects>
-                <viewController id="Arv-HP-aZE" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SwiftViewController" title="Swift Code" id="Arv-HP-aZE" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lNn-f8-Z2d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
